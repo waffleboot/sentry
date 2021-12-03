@@ -25,7 +25,7 @@ wip:
 	git wip && git push
 
 install:
-	helm install debug sentry2/simple
+	helm install sentry sentry2/simple
 
 uninstall:
-	helm uninstall debug
+	helm uninstall sentry
