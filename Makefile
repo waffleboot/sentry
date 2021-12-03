@@ -15,7 +15,7 @@ index:
 	helm repo index charts --url https://raw.githubusercontent.com/waffleboot/sentry/main/charts
 
 debug:
-	helm template debug sentry -f myvalues.yaml
+	helm template debug sentry
 
 package:
 	helm package sentry
@@ -25,7 +25,7 @@ wip:
 	git wip && git push
 
 install:
-	helm install sentry sentry2/sentry -f myvalues.yaml
+	helm install sentry sentry2/sentry
 
 uninstall:
 	helm uninstall sentry
