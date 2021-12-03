@@ -17,11 +17,11 @@ dependencies:
 #     repository: https://sentry-kubernetes.github.io/charts
 #     version: 3.0.0
 #     condition: clickhouse.enabled
-#   - name: rabbitmq
-#     repository: https://charts.bitnami.com/bitnami
-#     version: 8.9.1
-#     alias: rabbitmq
-#     condition: rabbitmq.enabled
+  - name: rabbitmq
+    repository: https://charts.bitnami.com/bitnami
+    version: 8.9.1
+    alias: rabbitmq
+    condition: rabbitmq.enabled
 #   - name: postgresql
 #     repository: https://charts.bitnami.com/bitnami
 #     version: 10.2.4
