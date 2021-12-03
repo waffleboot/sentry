@@ -1,6 +1,6 @@
 .PHONY: add update remove index debug package wip run
 
-run: package index update
+run: package index wip update
 
 add:
 	helm repo add sentry2 https://raw.githubusercontent.com/waffleboot/sentry/main/charts
