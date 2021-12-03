@@ -3,7 +3,7 @@ entries:
   sentry:
   - apiVersion: v2
     appVersion: 21.8.0
-    created: "2021-12-03T18:38:54.765092+03:00"
+    created: "2021-12-03T18:53:28.926847+03:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -15,10 +15,10 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: 8.9.1
     description: A Helm chart for Kubernetes
-    digest: 62f67fa60344aee4cca35c1ce949f3e4b48606b00124dd49f70adefeaba08462
+    digest: 2255f089155de4efbad95e523b4e0b99c000cd95455006471e5d49d0aed89992
     name: sentry
     type: application
     urls:
     - https://raw.githubusercontent.com/waffleboot/sentry/main/charts/sentry-12.0.0.tgz
     version: 12.0.0
-generated: "2021-12-03T18:38:54.734898+03:00"
+generated: "2021-12-03T18:53:28.898475+03:00"

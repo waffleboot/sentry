@@ -11,3 +11,10 @@ sentry:
 
 redis:
   architecture: 'standalone'
+
+rabbitmq:
+  replicaCount: 1
+  rbac:
+    create: false
+  pdb:
+    create: false
