@@ -1,20 +1,25 @@
-.PHONY: remove add gz index update debug
+.PHONY: add update remove index debug package wip run
+
+run: package index update
 
 add:
 	helm repo add sentry2 https://raw.githubusercontent.com/waffleboot/sentry/main/charts
 
-update: gz
-	git wip && git push
+update:
 	helm repo update sentry2
 
 remove:
 	helm repo remove sentry2
 
-gz:
-	tar -cvzf charts/simple-0.1.1.tgz simple
-
 index:
-	helm repo index charts
+	helm repo index charts --url https://raw.githubusercontent.com/waffleboot/sentry/main/charts
 
 debug:
-	helm template --debug haha sentry2/simple
+	helm template debug simple
+
+package:
+	helm package simple
+	mv simple-0.1.1.tgz charts
+
+wip:
+	git wip && git push

@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   simple:
   - apiVersion: v2
-    created: "2021-12-03T16:48:36.006818+03:00"
-    digest: c9bc6a49be40332a955b96a417e4e4a097d429aeb9c9efaaaa01196c0c54b594
+    created: "2021-12-03T17:38:19.840687+03:00"
+    digest: dbd1ab9e7e263bc93696e9ee403eb22d8c2f56ae56d3fdf22a5231cda7a49319
     name: simple
     urls:
     - https://raw.githubusercontent.com/waffleboot/sentry/main/charts/simple-0.1.1.tgz
-    version: 0.1.0
-generated: "2021-12-03T16:48:36.006304+03:00"
+    version: 0.1.1
+generated: "2021-12-03T17:38:19.840163+03:00"

@@ -2,22 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple
+  name: {{ .Release.Name }}-simple
   labels:
-    app: simple
+    app: {{ .Release.Name }}-simple
 spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: simple
+      app: {{ .Release.Name }}-simple
   replicas: 1
   template:
     metadata:
       labels:
-        app: simple
+        app: {{ .Release.Name }}-simple
     spec:
       containers:
-        - name: simple
+        - name: {{ .Release.Name }}-simple
           resources:
             limits:
               memory: 64Mi
@@ -25,20 +25,8 @@ spec:
             requests:
               memory: 64Mi
               cpu: "30m"
-          image: registry.gitlab.com/golang-developer-cloudmts_main/team10/bodyshop:main
-          imagePullPolicy: Always
-          ports:
-            - containerPort: 8004
-              name: http
-            - containerPort: 9909
-              name: grpc
-            - containerPort: 9911
-              name: metrics
-          volumeMounts:
-            - name: config-volume
-              mountPath: /application/config/simple-local.yaml
-              subPath: config.yaml
-      volumes:
-        - name: config-volume
-          configMap:
-            name: simple-config
+          image: busybox
+          imagePullPolicy: IfNotPresent
+          command:
+            - sleep
+            - infinity
