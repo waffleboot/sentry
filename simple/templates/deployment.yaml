@@ -28,5 +28,6 @@ spec:
           image: busybox
           imagePullPolicy: IfNotPresent
           command:
-            - sleep
-            - infinity
+            - sh
+            - -c
+            - 'sleep infinity'

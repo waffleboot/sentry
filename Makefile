@@ -23,3 +23,9 @@ package:
 
 wip:
 	git wip && git push
+
+install:
+	helm install debug sentry2/simple
+
+uninstall:
+	helm uninstall debug
