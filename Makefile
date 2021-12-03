@@ -15,17 +15,23 @@ index:
 	helm repo index charts --url https://raw.githubusercontent.com/waffleboot/sentry/main/charts
 
 debug:
-	helm template debug simple
+	helm template debug sentry \
+		--set postgresql.enabled=false \
+		--set externalPostgresql.password=123456 \
+		--set externalPostgresql.host=postgresql.team10.svc.cluster.local
 
 package:
-	helm package simple
-	mv simple-0.1.1.tgz charts
+	helm package sentry
+	mv sentry-12.0.0.tgz charts
 
 wip:
 	git wip && git push
 
 install:
-	helm install sentry sentry2/simple
+	helm install sentry sentry2/sentry \
+		--set postgresql.enabled=false \
+		--set externalPostgresql.password=123456 \
+		--set externalPostgresql.host=postgresql.team10.svc.cluster.local
 
 uninstall:
 	helm uninstall sentry
