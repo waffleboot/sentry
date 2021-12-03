@@ -1,10 +1,13 @@
-.PHONY: remove add gz index
+.PHONY: remove add gz index update
 
 add:
-	helm repo add simple https://raw.githubusercontent.com/waffleboot/sentry/main/charts
+	helm repo add sentry https://raw.githubusercontent.com/waffleboot/sentry/main/charts
+
+update:
+	helm repo update sentry
 
 remove:
-	helm repo remove simple
+	helm repo remove sentry
 
 gz:
 	tar -cvzf charts/simple.tgz simple
