@@ -11,7 +11,7 @@ remove:
 	helm repo remove sentry
 
 gz:
-	tar -cvzf charts/simple-0.1.0.tgz simple
+	tar -cvzf charts/simple-0.1.1.tgz simple
 
 index:
 	helm repo index charts
