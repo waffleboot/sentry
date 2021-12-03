@@ -15,7 +15,7 @@ index:
 	helm repo index charts --url https://raw.githubusercontent.com/waffleboot/sentry/main/charts
 
 debug:
-	helm template debug sentry --set serviceAccount.enabled=false
+	helm template debug sentry --set serviceAccount.enabled=false,rabbitmq.pdb.create=false,rabbitmq.rbac.create=false
 
 package:
 	helm package sentry
@@ -25,7 +25,7 @@ wip:
 	git wip && git push
 
 install:
-	helm install sentry sentry2/sentry --set serviceAccount.enabled=false
+	helm install sentry sentry2/sentry --set serviceAccount.enabled=false,rabbitmq.pdb.create=false,rabbitmq.rbac.create=false
 
 uninstall:
 	helm uninstall sentry
