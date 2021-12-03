@@ -25,7 +25,7 @@ wip:
 	git wip && git push
 
 install:
-	helm install sentry sentry2/sentry -f myvalues.yaml --debug
+	helm install sentry sentry2/sentry -f myvalues.yaml
 
 uninstall:
 	helm uninstall sentry
