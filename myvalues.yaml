@@ -1,10 +1,10 @@
-postgresql:
-    enabled: false
+# postgresql:
+#     enabled: false
 
-externalPostgresql:
-  host: postgresql.team10.svc.cluster.local
-  username: sentry
-  password: sentry
+# externalPostgresql:
+#   host: postgresql.team10.svc.cluster.local
+#   username: sentry
+#   password: sentry
 
 sentry:
   worker:
@@ -20,8 +20,8 @@ rabbitmq:
   pdb:
     create: false
 
-kafka:
-  enabled: false
+# kafka:
+#   enabled: false
 
-externalKafka:
-  host: tb-kafka.team10.svc.cluster.local
+# externalKafka:
+#   host: tb-kafka.team10.svc.cluster.local
