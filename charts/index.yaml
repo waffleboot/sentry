@@ -5,7 +5,5 @@ entries:
     created: "2021-12-03T16:48:36.006818+03:00"
     digest: c9bc6a49be40332a955b96a417e4e4a097d429aeb9c9efaaaa01196c0c54b594
     name: simple
-    urls:
-    - simple-0.1.0.tgz
     version: 0.1.0
 generated: "2021-12-03T16:48:36.006304+03:00"
