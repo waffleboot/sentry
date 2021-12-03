@@ -3,7 +3,8 @@
 add:
 	helm repo add sentry https://raw.githubusercontent.com/waffleboot/sentry/main/charts
 
-update:
+update: gz
+	git wip && git push
 	helm repo update sentry
 
 remove:
