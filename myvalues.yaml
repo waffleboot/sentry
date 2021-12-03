@@ -8,3 +8,6 @@ externalPostgresql:
 sentry:
   worker:
     replicas: 1
+
+redis:
+  architecture: 'standalone'
