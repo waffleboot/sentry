@@ -3,7 +3,7 @@
 run: package index wip update
 
 add:
-	helm repo add sentry2 https://raw.githubusercontent.com/waffleboot/sentry/main/charts
+	helm repo add sentry2 https://raw.githubusercontent.com/waffleboot/sentry/fix/charts
 
 update:
 	helm repo update sentry2
@@ -12,7 +12,7 @@ remove:
 	helm repo remove sentry2
 
 index:
-	helm repo index charts --url https://raw.githubusercontent.com/waffleboot/sentry/main/charts
+	helm repo index charts --url https://raw.githubusercontent.com/waffleboot/sentry/fix/charts
 
 debug:
 	helm template debug sentry -f myvalues.yaml
