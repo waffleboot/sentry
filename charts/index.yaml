@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   simple:
   - apiVersion: v2
-    created: "2021-12-03T16:43:22.727493+03:00"
-    digest: 65ed750138983b486dbc49502acaa71c0ac14508bd6a23afc0b40b68145d80c7
+    created: "2021-12-03T16:48:36.006818+03:00"
+    digest: c9bc6a49be40332a955b96a417e4e4a097d429aeb9c9efaaaa01196c0c54b594
     name: simple
     urls:
-    - simple.tgz
+    - simple-0.1.0.tgz
     version: 0.1.0
-generated: "2021-12-03T16:43:22.727023+03:00"
+generated: "2021-12-03T16:48:36.006304+03:00"
