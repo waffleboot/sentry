@@ -3,22 +3,30 @@ entries:
   sentry:
   - apiVersion: v2
     appVersion: 21.8.0
-    created: "2021-12-03T19:14:12.474604+03:00"
+    created: "2021-12-03T19:27:05.209968+03:00"
     dependencies:
     - condition: redis.enabled
       name: redis
       repository: https://charts.bitnami.com/bitnami
       version: 15.3.2
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: https://sentry-kubernetes.github.io/charts
+      version: 3.0.0
     - alias: rabbitmq
       condition: rabbitmq.enabled
       name: rabbitmq
       repository: https://charts.bitnami.com/bitnami
       version: 8.9.1
+    - condition: nginx.enabled
+      name: nginx
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.3.3
     description: A Helm chart for Kubernetes
-    digest: 1c3a3a19c966404559e9fb77cbe3897a121d754df4adacd18d0d86147c03b087
+    digest: f1e623b43d189b87554092070c4ecbce2a5ef385453eba0ad2700baea22c04c0
     name: sentry
     type: application
     urls:
     - https://raw.githubusercontent.com/waffleboot/sentry/main/charts/sentry-12.0.0.tgz
     version: 12.0.0
-generated: "2021-12-03T19:14:12.427016+03:00"
+generated: "2021-12-03T19:27:05.167761+03:00"

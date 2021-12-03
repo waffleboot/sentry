@@ -3,7 +3,8 @@ postgresql:
 
 externalPostgresql:
   host: postgresql.team10.svc.cluster.local
-  password: 123456
+  username: sentry
+  password: sentry
 
 sentry:
   worker:
@@ -21,3 +22,6 @@ rabbitmq:
 
 kafka:
   enabled: false
+
+externalKafka:
+  host: tb-kafka.team10.svc.cluster.local
