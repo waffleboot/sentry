@@ -27,5 +27,8 @@ wip:
 install:
 	helm install sentry sentry2/sentry -f myvalues.yaml
 
+upgrade:
+	helm upgrade sentry sentry2/sentry -f myvalues.yaml
+
 uninstall:
 	helm uninstall sentry
